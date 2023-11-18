@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+$Cor-Preto: #000000;
+$Cor-Preto-Hover: #424242;
+$Cor-Branco: #fff;
+$Cor-Cinza-Parcela: #666666;
+$Cor-Azul: #00C0EE;
+
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .Produtos {
+        width: 976px;
+        height: 1500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 5em;
+
+        .Card {
+            width: 195.25px;
+            height: 424px;
+            gap: .5em;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .Card__Name {
+            font-size: 14px;
+            font-weight: 400;
+            color: $Cor-Preto;
+        }
+
+        .Card__Valor {
+            font-size: 16px;
+            font-weight: 700;
+            color: $Cor-Preto;
+        }
+
+        .Card__Parcela {
+            font-size: 16px;
+            font-weight: 400;
+            color: $Cor-Cinza-Parcela;
+        }
+
+        .btn {
+            width: 195px;
+            height: 33px;
+            gap: 10px;
+            cursor: pointer;
+            color: $Cor-Branco;
+            background-color: $Cor-Preto;
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: $Cor-Preto-Hover;
+        }
+    }
+
+    .btn__CarregarMais {
+        width: 195px;
+        height: 33px;
+        gap: 10px;
+        cursor: pointer;
+        color: $Cor-Branco;
+        background-color: $Cor-Azul;
+        border: none;
+    }
+}
