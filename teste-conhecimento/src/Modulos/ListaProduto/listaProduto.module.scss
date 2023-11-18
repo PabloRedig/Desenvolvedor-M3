@@ -14,14 +14,22 @@ $Cor-Cinza-Parcela: #666666;
 $Cor-Azul: #00C0EE;
 
 .Container {
+    width: 800px;
+    height: auto;
+    position: relative;
+    top: 120px;
+    left: 347px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 50px;
+
 
     .Produtos {
-        width: 976px;
-        height: 1500px;
+        width: 800px;
+        height: auto    ;
+        margin: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -80,5 +88,6 @@ $Cor-Azul: #00C0EE;
         color: $Cor-Branco;
         background-color: $Cor-Azul;
         border: none;
+        z-index: 2;
     }
 }

@@ -1,9 +1,16 @@
-import ListaProdutos from "./ListaProduto/ListaProdutos";
-import Imagen from "./img/img_2.png"
+import Cabecalho from "./Modulos/Cabecalho/cabecalho";
+import ListaProdutos from "./Modulos/ListaProduto/ListaProdutos";
+import RodaPe from "./Modulos/RodaPe/rodaPe";
+import FitroCategoria from "./Modulos/FiltroCategoria/FitroCategoria";
+
+
 function App() {
   return (
     <>
+      <Cabecalho />
+      <FitroCategoria />
       <ListaProdutos />
+      <RodaPe />  
     </>
   );
 }

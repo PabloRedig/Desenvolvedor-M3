@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$Cor-Divisoria: #C7C7C7;
+$Cor-Principal: #00C0EE;
+
+.Cabecalho {
+    width: 98.9vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    border-bottom: 1px solid $Cor-Divisoria;
+
+    .logo {
+        position: absolute;
+        left: 162px;
+    }
+
+    .carrinho {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 15px;
+        right: 166px;
+
+        
+    .contador {
+        width: 12px;
+        height: 13px;
+        border-radius: 5em;
+        font-size: 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        right: 12px;
+        top: 10px;
+        background-color: $Cor-Principal;
+    }
+
+    }
+
+}

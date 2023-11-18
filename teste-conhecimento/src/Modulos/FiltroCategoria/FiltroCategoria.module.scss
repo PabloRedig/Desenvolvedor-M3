@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+.filtrar_E_Ordenar {
+    position: relative;
+
+    background-color: aquamarine;
+
+    h1 {
+        position: absolute;
+        left: 100px;
+        top: 30px;
+        color: #333;
+        font-family: 'Open Sans';
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .Filtro {
+        width: 157px;
+        height: 544px;
+        position: absolute;
+        left: 100px;
+        top: 120px;
+
+        border: 1px solid black;
+    }
+
+    .ordernar{
+        position: absolute;
+        right: 162px;
+        top: 53px;    }
+}
