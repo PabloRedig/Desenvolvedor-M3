@@ -28,12 +28,39 @@
         position: absolute;
         left: 100px;
         top: 120px;
+        background-color: antiquewhite;
 
-        border: 1px solid black;
+        .categoria_Cores {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .categoria_Tamanho {
+            width: 153px;
+            height: 158px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            cursor: pointer;
+
+
+            .bloco_tamanho {
+                width: 32px;
+                height: 32px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                font-weight: 400;
+                font-size: 16px;
+                border: 1px solid black;
+            }
+
+        }
     }
 
-    .ordernar{
+    .ordernar {
         position: absolute;
         right: 162px;
-        top: 53px;    }
+        top: 53px;
+    }
 }
