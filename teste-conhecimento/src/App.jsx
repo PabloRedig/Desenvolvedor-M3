@@ -7,7 +7,6 @@ import FitroCategoria from "./Modulos/FiltroCategoria/FitroCategoria";
 function App() {
   return (
     <>
-      <Cabecalho />
       <FitroCategoria />
       <ListaProdutos />
       <RodaPe />  
