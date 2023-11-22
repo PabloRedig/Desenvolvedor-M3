@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import style from "./listaProduto.module.scss";
-
-//import provisorio
-import imagem from "../../img/img_6.png";
 import Cabecalho from '../Cabecalho/cabecalho';
 
 const ApiComponent = (props) => {
@@ -49,7 +46,7 @@ const ApiComponent = (props) => {
             <div className={style.Produtos}>
                 {displayedData.map((produto, index) => (
                     <div key={index} className={style.Card}>
-                        <img src={imagem} alt={`Imagem ${produto.name}`} />
+                        <img src={produto.image} alt={`Imagem ${produto.name}`} />
                         <label className={style.Card__Name}>{produto.name}</label>
                         <label className={style.Card__Valor}>{`R$ ${produto.price}`}</label>
                         <label className={style.Card__Parcela}>{`Até ${produto.parcelamento[0]} x de R$ ${produto.parcelamento[1]}`}</label>
