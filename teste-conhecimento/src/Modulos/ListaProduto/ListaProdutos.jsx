@@ -52,7 +52,7 @@ const ApiComponent = (props) => {
                         <img src={imagem} alt={`Imagem ${produto.name}`} />
                         <label className={style.Card__Name}>{produto.name}</label>
                         <label className={style.Card__Valor}>{`R$ ${produto.price}`}</label>
-                        <label className={style.Card__Parcela}>{produto.parcelamento}</label>
+                        <label className={style.Card__Parcela}>{`Até ${produto.parcelamento[0]} x de R$ ${produto.parcelamento[1]}`}</label>
                         <button className={style.btn} onClick={() => handleAddToCart(produto)}>
                             COMPRAR
                         </button>

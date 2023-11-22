@@ -10,14 +10,16 @@ export default function FitroCategoria() {
                 <div>
                     <details className={style.categoria_Cores}>
                         <summary>CORES</summary>
-                        <label><input type="checkbox" name="" id="" />Cores</label>
-                        <label><input type="checkbox" name="" id="" />Cores</label>
-                        <label><input type="checkbox" name="" id="" />Cores</label>
-                        <label><input type="checkbox" name="" id="" />Cores</label>
-                        <label><input type="checkbox" name="" id="" />Cores</label>
-                        <label><input type="checkbox" name="" id="" />Cores</label>
-                        <label><input type="checkbox" name="" id="" />Cores</label>
-                        <label><input type="checkbox" name="" id="" />Cores</label>
+                        <label><input type="checkbox" name="" id="" /> Amarelo</label>
+                        <label><input type="checkbox" name="" id="" /> Azul</label>
+                        <label><input type="checkbox" name="" id="" /> Branco</label>
+                        <label><input type="checkbox" name="" id="" /> Cinza</label>
+                        <label><input type="checkbox" name="" id="" /> laranja</label>
+                        <label><input type="checkbox" name="" id="" /> Verde</label>
+                        <label><input type="checkbox" name="" id="" /> Vermelho</label>
+                        <label><input type="checkbox" name="" id="" /> preto</label>
+                        <label><input type="checkbox" name="" id="" /> Rosa</label>
+                        <label><input type="checkbox" name="" id="" /> Vinho</label>
                     </details>
                 </div>
 
@@ -36,7 +38,6 @@ export default function FitroCategoria() {
                         <div className={style.bloco_tamanho}> 36 </div>
                         <div className={style.bloco_tamanho}> 38 </div>
                         <div className={style.bloco_tamanho}> 40 </div>
-
                     </div>
                 </details>
 
@@ -44,10 +45,11 @@ export default function FitroCategoria() {
                 <div >
                     <details className={style.categoria_Cores}>
                         <summary>PREÇO</summary>
-                        <label><input type="checkbox" name="" id="" />Preço</label>
-                        <label><input type="checkbox" name="" id="" />Preço</label>
-                        <label><input type="checkbox" name="" id="" />Preço</label>
-                        <label><input type="checkbox" name="" id="" />Preço</label>
+                        <label><input type="checkbox" name="" id="" /> de R$0,00 Até R$50,00</label>
+                        <label><input type="checkbox" name="" id="" /> de R$51,00 Até R$150,00</label>
+                        <label><input type="checkbox" name="" id="" /> de R$151,00 Até R$300,00</label>
+                        <label><input type="checkbox" name="" id="" /> de R$301,00Até R$500,00</label>
+                        <label><input type="checkbox" name="" id="" /> A partir de R$500,00</label>
                     </details>
                 </div>
             </div>
