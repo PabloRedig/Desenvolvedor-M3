@@ -1,3 +1,19 @@
+# Para rodar o Projeto em sua maquina
+
+1°: Iniciei o Servidor, para iniciar o server.json em sua maquina, roda o NPM INSTAL dentro da pasta ' DESENVOLVEDOR-M3-1 ', Ápos rode NPM RUN SERVER e sera possivel acessar na URL: http://localhost:5000/products.
+
+2°: Iniciei o Front-End, para iniciar o Front-end em sua maquina, rode o NPM INSTAL dentro da pasta ' teste-conhecimento ', Ápos rode NPM start e será possivel acessar na URL: http://localhost:3000.
+
+# Dados do Candidato
+
+- E-mail: [pabloredigmrv@gmail.com]
+- Linkedin: (https://www.linkedin.com/in/pabloredig/)
+
+# Observações
+
+- Nao conclui o desafio por completo, ficou faltando a funcionalidade de Filtra Categorias e Ordenar Preços.
+
+----
 # Venha ser um desenvolvedor da Digital M3
 
 Ola, somos a Agência Digital M3, uma agência voltada para ramo de comercio eletrônico, trabalhamos com implantação, migração, evolução e otimização de e-commerces. Estamos com a sede de desenvolvimento em Nova Friburgo RJ. Mas contratamos pessoas de todo o pais, visto que trabalhamos 100% home office.  
