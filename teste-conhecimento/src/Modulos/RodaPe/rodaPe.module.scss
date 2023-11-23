@@ -1,14 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-
-$Cor-Preta: #000000 ;
-$Cor-Branca: #fff;
+@import "../../App.module.scss";
 
 .rodape{
-    width: 98.9vw;
+    width: 100%;
     height: 33px;
 
     display: flex;
@@ -17,6 +10,6 @@ $Cor-Branca: #fff;
 
     position: relative;
     bottom: -200px;
-    color: $Cor-Branca;
-    background-color: $Cor-Preta;
+    color: $Cor-Branco;
+    background-color: $Cor-Preto;
 }

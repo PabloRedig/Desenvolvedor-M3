@@ -1,15 +1,17 @@
-import Cabecalho from "./Modulos/Cabecalho/cabecalho";
 import ListaProdutos from "./Modulos/ListaProduto/ListaProdutos";
 import RodaPe from "./Modulos/RodaPe/rodaPe";
 import FitroCategoria from "./Modulos/FiltroCategoria/FitroCategoria";
+import style from "./App.module.scss"
 
 
 function App() {
   return (
     <>
-      <FitroCategoria />
-      <ListaProdutos />
-      <RodaPe />  
+      <div className={style.BlocoGeral}>
+        <FitroCategoria />
+        <ListaProdutos />
+        <RodaPe />
+      </div>
     </>
   );
 }

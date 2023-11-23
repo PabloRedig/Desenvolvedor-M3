@@ -1,19 +1,12 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import "../../App.module.scss";
 
 .filtrar_E_Ordenar {
     position: relative;
 
-    background-color: aquamarine;
-
     h1 {
         position: absolute;
-        left: 100px;
-        top: 30px;
+        left: 160px;
+        top: 80px;
         color: #333;
         font-family: 'Open Sans';
         font-size: 32px;
@@ -23,11 +16,11 @@
     }
 
     .Filtro {
-        width: 157px;
+        width: 240px;
         height: 544px;
         position: absolute;
-        left: 100px;
-        top: 120px;
+        left: 160px;
+        top: 160px;
         background-color: antiquewhite;
 
         .categoria_Cores {
@@ -36,11 +29,13 @@
         }
 
         .categoria_Tamanho {
-            width: 153px;
-            height: 158px;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            cursor: pointer;
+            width: 200px;
+            height: auto;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 8px;
 
 
             .bloco_tamanho {
@@ -49,18 +44,99 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                border: 1px solid $Cor-Preto;
 
-                font-weight: 400;
-                font-size: 16px;
-                border: 1px solid black;
+
             }
 
+            .bloco_tamanho:active {
+                border-color: $Cor-Principal;
+            }
         }
+
     }
 
     .ordernar {
         position: absolute;
         right: 162px;
-        top: 53px;
+        top: 85px;
+
+        .opc {
+            width: 142px;
+            height: 42px;
+            border: 1px solid $Cor-Divisoria;
+        }
+    }
+
+    .btnFiltro_Ordenar {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 1024px) {
+    .filtrar_E_Ordenar {
+
+        .Filtro,
+        h1 {
+            left: 60px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .filtrar_E_Ordenar {
+        h1 {
+            left: 45%;
+        }
+
+        .Filtro {
+            display: none;
+        }
+
+        .ordernar {
+            display: none;
+        }
+
+        .btnFiltro_Ordenar {
+            position: absolute;
+            top: 150px;
+            left: 11%;
+
+            background-color: antiquewhite;
+
+            button {
+                width: 300px;
+                height: 49px;
+                border: 1px solid $Cor-Preto;
+                background-color: $Cor-Branco;
+                color: $Cor-Preto;
+                font-size: 24px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .filtrar_E_Ordenar {
+        h1 {
+            left: 40%;
+        }
+
+        .btnFiltro_Ordenar {
+            display: flex;
+            justify-content: center;
+            align-items: center;           
+
+            button {
+                width: 150px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
     }
 }

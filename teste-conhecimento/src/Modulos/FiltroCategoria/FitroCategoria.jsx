@@ -56,12 +56,17 @@ export default function FitroCategoria() {
 
 
             <div className={style.ordernar}>
-                <select name="" id="">
+                <select className={style.opc} name="" id="">
                     <option value="">Ordernar</option>
                     <option value="">Mais Recente</option>
                     <option value="">Menor Preço</option>
                     <option value="">Maior Preço</option>
                 </select>
+            </div>
+
+            <div className={style.btnFiltro_Ordenar}>
+                <button> FILTRAR </button>
+                <button> ORDENAR </button>
             </div>
         </div>
     </>

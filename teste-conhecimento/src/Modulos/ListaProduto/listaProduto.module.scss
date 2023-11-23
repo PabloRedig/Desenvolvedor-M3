@@ -1,24 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-}
-
-$Cor-Preto: #000000;
-$Cor-Preto-Hover: #424242;
-$Cor-Branco: #fff;
-$Cor-Cinza-Parcela: #666666;
-$Cor-Azul: #00C0EE;
+@import "../../App.module.scss";
 
 .Container {
     width: 800px;
     height: auto;
     position: relative;
-    top: 120px;
-    left: 347px;
+    top: 110px;
+    left: 537px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,8 +14,7 @@ $Cor-Azul: #00C0EE;
 
 
     .Produtos {
-        width: 800px;
-        height: auto    ;
+        height: auto;
         margin: auto;
         display: flex;
         justify-content: center;
@@ -86,8 +72,37 @@ $Cor-Azul: #00C0EE;
         gap: 10px;
         cursor: pointer;
         color: $Cor-Branco;
-        background-color: $Cor-Azul;
+        background-color: $Cor-Principal;
         border: none;
         z-index: 2;
+    }
+}
+
+
+@media (max-width: 1024px) {
+
+    .Container {
+        width: 600px;
+        left: 337px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .Container {
+        position: relative;
+        top: 180px;
+        left: 0;
+        margin: auto;    
+    }
+}
+
+@media (max-width: 375px){
+    .Container{
+        width: 389px;
+        .Produtos{
+            gap: 3px;
+        }
     }
 }
